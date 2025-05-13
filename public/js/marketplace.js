@@ -108,7 +108,7 @@ async function fetchProducts() {
         category: 'Pantry',
         price: 8.99,
         unit: 'jar',
-        image: 'https://images.pexels.com/photos/266583/pexels-photo-266583.jpeg?auto=compress&cs=tinysrgb&w=600',
+        image: 'https://images.pexels.com/photos/6422025/pexels-photo-6422025.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         dietary: ['organic', 'gluten-free'],
         badge: 'Organic'
       },
@@ -128,7 +128,7 @@ async function fetchProducts() {
         category: 'Herbs',
         price: 2.29,
         unit: 'bunch',
-        image: 'https://images.pexels.com/photos/5503207/pexels-photo-5503207.jpeg?auto=compress&cs=tinysrgb&w=600',
+        image: 'https://images.pexels.com/photos/1087902/pexels-photo-1087902.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         dietary: ['organic', 'vegan', 'gluten-free'],
         badge: 'Local'
       },
@@ -168,7 +168,7 @@ async function fetchProducts() {
         category: 'Vegetables',
         price: 2.99,
         unit: 'bunch',
-        image: 'https://images.pexels.com/photos/5486109/pexels-photo-5486109.jpeg?auto=compress&cs=tinysrgb&w=600',
+        image: 'https://images.pexels.com/photos/2998957/pexels-photo-2998957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         dietary: ['organic', 'vegan', 'gluten-free'],
         badge: 'Organic'
       },
@@ -178,7 +178,7 @@ async function fetchProducts() {
         category: 'Pantry',
         price: 12.99,
         unit: 'bottle',
-        image: 'https://images.pexels.com/photos/33783/olive-oil-salad-dressing-cooking.jpg?auto=compress&cs=tinysrgb&w=600',
+        image: 'https://images.pexels.com/photos/1022385/pexels-photo-1022385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         dietary: ['organic', 'vegan', 'gluten-free'],
         badge: 'Cold-Pressed'
       },
@@ -208,7 +208,7 @@ async function fetchProducts() {
         category: 'Bakery',
         price: 3.99,
         unit: 'each',
-        image: 'https://images.pexels.com/photos/1277/food-baguette-bread-french.jpg?auto=compress&cs=tinysrgb&w=600',
+        image: 'https://images.pexels.com/photos/461060/pexels-photo-461060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=20',
         dietary: ['vegan'],
         badge: 'Fresh'
       },
@@ -248,7 +248,7 @@ async function fetchProducts() {
         category: 'Vegetables',
         price: 2.49,
         unit: 'each',
-        image: 'https://images.pexels.com/photos/128420/pexels-photo-128420.jpeg?auto=compress&cs=tinysrgb&w=600',
+        image: 'https://images.pexels.com/photos/2893635/pexels-photo-2893635.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         dietary: ['organic', 'vegan', 'gluten-free'],
         badge: 'Organic'
       },
