@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Marketplace - Login</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+  <header id="main-header">
+    <div class="container">
+      <div class="logo">
+        <a href="/">
+          <img src="images/logo.svg" alt="Fresh Marketplace Logo">
+          <span>Fresh Market</span>
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/marketplace.html">Marketplace</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="/cart.html" class="cart-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+          <span class="cart-count">0</span>
+        </a>
+        <a href="/login.html" class="btn btn-outline active">Sign In</a>
+      </div>
+      <button class="mobile-menu-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="auth-section">
+      <div class="container">
+        <div class="auth-container">
+          <div class="auth-box">
+            <div class="auth-header">
+              <ul class="auth-tabs">
+                <li class="tab active" data-tab="login">Sign In</li>
+                <li class="tab" data-tab="register">Create Account</li>
+              </ul>
+            </div>
+            
+            <div class="auth-content">
+              <div class="auth-form" id="login-form">
+                <h1>Sign In to Your Account</h1>
+                <form>
+                  <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <div class="password-field">
+                      <input type="password" id="login-password" required>
+                      <button type="button" class="toggle-password">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="form-action">
+                    <div class="form-options">
+                      <label class="checkbox-container">
+                        <input type="checkbox" id="remember-me">
+                        <span class="checkmark"></span>
+                        Remember me
+                      </label>
+                      <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                </form>
+                <div class="auth-message"></div>
+              </div>
+              
+              <div class="auth-form hidden" id="register-form">
+                <h1>Create Your Account</h1>
+                <form>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="register-first-name">First Name</label>
+                      <input type="text" id="register-first-name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="register-last-name">Last Name</label>
+                      <input type="text" id="register-last-name" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <div class="password-field">
+                      <input type="password" id="register-password" required>
+                      <button type="button" class="toggle-password">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                      </button>
+                    </div>
+                    <div class="password-strength">
+                      <div class="strength-bar">
+                        <div class="strength-level"></div>
+                      </div>
+                      <span class="strength-text">Password strength</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="register-confirm-password">Confirm Password</label>
+                    <div class="password-field">
+                      <input type="password" id="register-confirm-password" required>
+                      <button type="button" class="toggle-password">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="form-action">
+                    <label class="checkbox-container terms-checkbox">
+                      <input type="checkbox" id="terms-agree" required>
+                      <span class="checkmark"></span>
+                      I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+                </form>
+                <div class="auth-message"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="auth-image">
+            <img src="https://images.pexels.com/photos/1393382/pexels-photo-1393382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Fresh produce">
+            <div class="auth-overlay">
+              <h2>Join Our Community</h2>
+              <p>Sign up to get access to exclusive offers, order tracking, and a personalized shopping experience.</p>
+              <div class="auth-features">
+                <div class="auth-feature">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                  <span>Save your favorite products</span>
+                </div>
+                <div class="auth-feature">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                  <span>Track your orders easily</span>
+                </div>
+                <div class="auth-feature">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                  <span>Get personalized recommendations</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <img src="images/logo.svg" alt="Fresh Marketplace Logo">
+            <span>Fresh Market</span>
+          </div>
+          <p>Bringing the freshest produce direct from farms to your table since 2023.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/marketplace.html">Marketplace</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/about.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Customer Service</h3>
+          <ul class="footer-links">
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Newsletter</h3>
+          <p>Subscribe to receive updates on new products and special promotions.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Fresh Marketplace. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
