@@ -134,13 +134,13 @@ async function fetchProducts() {
       },
       {
         id: 9,
-        name: 'Grass-Fed Ground Beef',
-        category: 'Meat',
+        name: 'Onion',
+        category: 'Fruits',
         price: 7.99,
-        unit: 'lb',
-        image: 'https://images.pexels.com/photos/618775/pexels-photo-618775.jpeg?auto=compress&cs=tinysrgb&w=600',
+        unit: 'bunch',
+        image: 'https://images.pexels.com/photos/4197445/pexels-photo-4197445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         dietary: ['gluten-free'],
-        badge: 'Grass-Fed'
+        badge: 'Local'
       },
       {
         id: 10,
@@ -148,7 +148,7 @@ async function fetchProducts() {
         category: 'Fruits',
         price: 4.49,
         unit: 'pint',
-        image: 'https://images.pexels.com/photos/87818/pexels-photo-87818.jpeg?auto=compress&cs=tinysrgb&w=600',
+        image: 'https://images.pexels.com/photos/70862/pexels-photo-70862.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         dietary: ['organic', 'vegan', 'gluten-free'],
         badge: 'Organic'
       },
@@ -268,7 +268,7 @@ async function fetchProducts() {
         category: 'Pantry',
         price: 6.99,
         unit: 'box',
-        image: 'https://images.pexels.com/photos/4240959/pexels-photo-4240959.jpeg?auto=compress&cs=tinysrgb&w=600',
+        image: 'https://images.pexels.com/photos/814264/pexels-photo-814264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         dietary: ['organic', 'vegan', 'gluten-free'],
         badge: 'Organic'
       },
@@ -278,7 +278,7 @@ async function fetchProducts() {
         category: 'Dairy',
         price: 3.99,
         unit: 'carton',
-        image: 'https://images.pexels.com/photos/11111603/pexels-photo-11111603.jpeg?auto=compress&cs=tinysrgb&w=600',
+        image: 'https://images.pexels.com/photos/3735192/pexels-photo-3735192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         dietary: ['vegan', 'gluten-free'],
         badge: 'Dairy-Free'
       },
